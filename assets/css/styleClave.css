@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    background-color: blue;
+    color: white;
+    width: clamp(400px,100%,500px);
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    /*animation:  rotate 1.5s ease-in-out 1;*/
+    animation: fadeIn 2s ease-in both;
+    opacity: 0;
+}
+@keyframes rotate {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.mensaje{
+    opacity: 0;
+    
+}
+.animarMensaje{
+    opacity: 0;
+    animation: fadeIn 2s ease-in both;
+    }
+
+
+
+.valores{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: orange;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.btnDisabled{
+    padding: 0.5rem 1rem;
+    cursor:not-allowed;
+    background-color: gray;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: yellow;
+    color: black;
+}

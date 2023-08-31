@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar cantidad</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Puedes llevar hasta 10 celulares en total</h1>
+        <section class="celulares">
+            <div class="card">
+                <img src="./assets/img/celular1.webp" id="imgCel1">
+                <div>
+                    <label for="valor1">Cantidad 1</label>
+                    <input id="valor1" type="number" min="0" onfocus="animaImg1Focus.play();" onkeypress="evitarPunto()">
+                </div>
+                
+            </div>
+            <div class="card">
+                <img src="./assets/img/celular2.webp" id="imgCel2">
+                <div>
+                    <label for="valor2">Cantidad 2</label>
+                    <input id="valor2" type="number" min="0" onfocus="animaImg2Focus.play();" onkeypress="evitarPunto()">
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/celular3.webp"  id="imgCel3">
+                <div>
+                    <label for="valor3">Cantidad 3</label>
+                    <input id="valor3" type="number" min="0" onfocus="animaImg3Focus.play();" onkeypress="evitarPunto()">
+                </div>
+            </div>
+        </section>
+        <button id="btnComprar" onclick="validar()">Comprar</button>
+        <p class="mensaje"></p>
+    </main>
+    <script src="./assets/js/cantidad.js"></script>
+</body>
+</html>

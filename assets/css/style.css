@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #00579C;
+    height: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto';
+}
+h1{
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 1rem;
+    overflow: scroll;
+}
+.celulares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+input{
+    border-width: 0;
+    border-style: none;
+    border-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+input:hover, input:focus, input:active{
+    border-width: 0;
+    border-style: none;
+}
+
+.card img{
+    transition: 1s;
+}
+.card img:hover{
+    scale: 1.1;
+}
+label{
+    display: block;
+    color: white;
+}
+button{
+    padding: 0.5rem 1rem;
+    background-color: orange;
+    border: 0;
+    cursor: pointer;
+    transition: scale 100ms;
+}
+button:hover{
+    scale: 1.1;
+}
+.mensaje{
+    opacity: 0;
+    /*background-color: white;*/
+    padding: 5px 15px;
+}
+
